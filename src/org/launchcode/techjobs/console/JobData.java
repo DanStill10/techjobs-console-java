@@ -115,7 +115,7 @@ public class JobData {
 
                 allJobs.add(newJob);
             }
-            // testing initial commit
+            // testing initial commits
             // flag the data as loaded, so we don't do it twice
             isDataLoaded = true;
 
