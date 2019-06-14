@@ -91,13 +91,15 @@ public class JobData {
 
         for (HashMap<String, String> job : allJobs){
 
-            for (String listingDetail : job.values()){
+            for (Map.Entry<String, String> entry : job.entrySet()){
+
+                String listingDetail = entry.getValue();
 
                 if (listingDetail.toLowerCase().contains(value.toLowerCase())){
 
                     jobs.add(job);
+                    break;
                 }
-                break;
             }
 
         }
